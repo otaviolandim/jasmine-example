@@ -3,12 +3,14 @@
 module.exports = function(config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine', 'requirejs'],
+    frameworks: ['jasmine'],
     files: [
+      'js/libs/three.min.js',
+      'js/libs/require.js',
       {pattern: 'src/**/*.js', included: false},
       {pattern: 'tests/**/*spec.js', included: false},
 
-      'tests/test-main.js'
+      'tests/exemplo.spec.js'
     ],
     exclude: [],
     preprocessors: {},
