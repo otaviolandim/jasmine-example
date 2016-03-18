@@ -7,10 +7,8 @@ module.exports = function(config) {
     files: [
       'js/libs/three.min.js',
       'js/libs/require.js',
-      {pattern: 'src/**/*.js', included: false},
-      {pattern: 'tests/**/*spec.js', included: false},
-
-      'tests/exemplo.spec.js'
+      'src/**/*.js',
+      'tests/*.js'
     ],
     exclude: [],
     preprocessors: {},
