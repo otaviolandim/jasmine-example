@@ -8,18 +8,28 @@ module.exports = function(config) {
       'js/libs/three.min.js',
       'js/libs/require.js',
       'src/**/*.js',
-      'tests/*.js'
+      'tests/unit/*.js'
     ],
     exclude: [],
     preprocessors: {},
-    reporters: ['progress'],
+    reporters: ['progress', 'html'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    //browsers: ['Chrome', 'PhantomJS', 'Firefox'],
     singleRun: true,
-    concurrency: Infinity
+    concurrency: Infinity,
+    htmlReporter: {
+      outputDir: 'reports',
+      templatePath: null,
+      focusOnFailures: true,
+      namedFiles: false,
+      pageTitle: null,
+      urlFriendlyName: false,
+      reportName: 'report',
+      preserveDescribeNesting: false,
+      foldAll: false,
+    }
   })
 }
