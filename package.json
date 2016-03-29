@@ -13,11 +13,10 @@
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.2",
     "karma-firefox-launcher": "^0.1.7",
+    "karma-html-reporter": "^0.2.7",
     "karma-jasmine": "^0.3.7",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-requirejs": "^0.2.5",
-    "phantomjs-prebuilt": "^2.1.5",
-    "requirejs": "^2.1.22",
-    "three": "^0.75.0"
+    "phantomjs-prebuilt": "^2.1.5"
   }
 }
