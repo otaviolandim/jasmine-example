@@ -14,7 +14,7 @@ Adicionando o arquivo package.json
 Adicionando o plugin do Jasmine como dependência em ambiente de desenvolvimento no arquivo package.json
 
 ```
-   $ npm install jasmine-core --save-dev
+  $ npm install jasmine-core --save-dev
 ```   
 
 Estrutura de um arquivo de teste simples
@@ -38,11 +38,11 @@ Servidor para rodar os testes, que possui fácil integração com Jasmine, Mocha
 Instalando/Configurando o Karma
 
 ```
-   $ npm install -g karma-cli
+  $ npm install -g karma-cli
 
-   $ npm install karma --save-dev
+  $ npm install karma --save-dev
 
-   $ karma init karma.conf.js
+  $ karma init karma.conf.js
 ```   
 
 Executando seus testes
