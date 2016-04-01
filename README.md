@@ -3,19 +3,23 @@
 É um framework de BDD (Behaviour-Driven Development) para testar código em JavaScript. Ele não depende de outro framework JavaScript.
 Possui sintaxe limpa, óbiva para que você possa facilmente escrever testes.
 
-# Instalando/Configurando o Jasmine
+Instalando/Configurando o Jasmine
 
-# Adicionando o arquivo package.json
+Adicionando o arquivo package.json
 
-<code>$ npm init</code>
+```
+  $ npm init
+```
 
-# Adicionando o plugin do Jasmine como dependência em ambiente de desenvolvimento no arquivo package.json
+Adicionando o plugin do Jasmine como dependência em ambiente de desenvolvimento no arquivo package.json
 
-<code>$ npm install jasmine-core --save-dev</code>
+```
+   $ npm install jasmine-core --save-dev
+```   
 
-# Estrutura de um arquivo de teste simples
-<code>
+Estrutura de um arquivo de teste simples
 
+```
 describe ('Suíte de Testes', function(){
   it('deve retornar true', function(){
     expect(true).toBe(true);
@@ -25,21 +29,24 @@ describe ('Suíte de Testes', function(){
     expect(false).toBe(false);
   });
 });
+```
 
-</code>
-
-# E como executar seus testes? Karma
+E como executar seus testes? Karma
 
 Servidor para rodar os testes, que possui fácil integração com Jasmine, Mocha e Qunit, e foi desenvolvido pela equipe do angular.
 
-# Instalando/Configurando o Karma
+Instalando/Configurando o Karma
 
-<code>$ npm install -g karma-cli</code>
+```
+   $ npm install -g karma-cli
 
-<code>$ npm install karma --save-dev</code>
+   $ npm install karma --save-dev
 
-<code>$ karma init karma.conf.js</code>
+   $ karma init karma.conf.js
+```   
 
-# Executando seus testes
+Executando seus testes
 
-<code>$ karma start karma.conf.js</code>
+```
+  $ karma start karma.conf.js
+```  
