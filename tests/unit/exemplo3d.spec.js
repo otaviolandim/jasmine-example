@@ -22,8 +22,13 @@ describe('Exemplo Cubo',function(){
     renderer.render(scene, camera)
   };
 
-	it('should return 100',function(){
+	it('should return 100 to aixes x',function(){
     cube.rotation.x = 100;
 		expect(cube.rotation.x).toBe(100);
+	});
+
+	it('should return 100 to aixes x',function(){
+	    cube.rotation.y = 101;
+			expect(cube.rotation.y).toBe(101);
 	});
 });
